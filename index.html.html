@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome by Siam</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4e50, #fc913a);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        button {
+            background: red;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: darkred;
+            transform: scale(1.1);
+        }
+
+        #msg {
+            margin-top: 25px;
+            font-size: 22px;
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome everyone on behalf of Siam</h1>
+
+    <button onclick="showText()">Click Here</button>
+
+    <div id="msg">
+        ai tumra sobai kemone aso...? ??<br><br>
+        thik moto likha pora koro to...? <br><br>
+        porte hobe porte hobe nokol ar hobena ...! 
+		
+    </div>
+
+    <script>
+        function showText() {
+            document.getElementById("msg").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
